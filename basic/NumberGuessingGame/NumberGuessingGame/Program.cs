@@ -11,10 +11,25 @@ class NumberGuessingGame
             Random random = new Random();
             int number = random.Next(1, 101);
 
+
             Console.WriteLine("Hello there! Welcome to NumberGuessingGame");
             Console.Write("Enter your number: ");
-            int chosenNumber = Convert.ToInt32(Console.ReadLine());
-           
+            
+            
+            int chosenNumber;
+            while (true)
+            {
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out chosenNumber))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input try again");
+                }
+            }
             counter++;
             while (chosenNumber != number)
             {
@@ -29,8 +44,20 @@ class NumberGuessingGame
 
                 }
                 Console.Write("Enter your number again: ");
-                chosenNumber = Convert.ToInt32(Console.ReadLine());
-               
+              
+                while (true)
+                {
+                    string input = Console.ReadLine();
+
+                    if (int.TryParse(input, out chosenNumber))
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input try again");
+                    }
+                }
             }
                 Console.WriteLine($"Congratulations! you guessed it in {counter} tries.");
             
