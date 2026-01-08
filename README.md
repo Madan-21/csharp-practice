@@ -1,80 +1,86 @@
-C# Practice
+# 🎯 C# Practice Repository
 
-This repository contains my C# practice projects as I learn and improve my programming skills, starting from basic console applications to modern GUI-based apps.
+Welcome to my **C# practice repository** 🚀
+This repo documents my journey of learning C# — starting from **console applications** and moving toward **modern GUI-based apps** using **.NET MAUI**.
 
-Projects
-Basics
-🎯 Number Guessing Game (Console)
+---
 
-A console-based game where the player guesses a random number between 1–100.
+## 📁 Projects
 
-Provides feedback such as “Too High” or “Too Low” until the correct number is guessed.
+### 🔹 Basics
 
-Helps practice:
+#### 🎲 Number Guessing Game — Console
 
-Loops and conditionals
+A simple console game where the player guesses a randomly generated number between **1–100**.
 
-User input and type conversion
+**What it practices:**
 
-Random class usage
+* 🔁 Loops & conditionals
+* ⌨️ User input & type conversion
+* 🎲 `Random` number generation
 
-🖥️ Number Guessing Game (GUI – .NET MAUI)
+---
 
-A graphical user interface (GUI) version of the Number Guessing Game built using .NET MAUI.
+#### 🖥️ Number Guessing Game — GUI (.NET MAUI)
 
-Allows users to enter guesses using input fields and buttons instead of the console.
+A **graphical version** of the Number Guessing Game built using **.NET MAUI** and **XAML**.
 
-Features:
+**Key highlights:**
 
-Clean UI with XAML
+* 🎨 Clean and responsive UI
+* 🧠 Event-driven logic
+* 🔘 Button-based interaction
+* 💬 Instant feedback for each guess
 
-Event-driven programming
+**Concepts practiced:**
 
-Real-time feedback on guesses
+* .NET MAUI project structure
+* XAML layouts
+* Code-behind logic
+* Cross-platform app development
 
-Helps practice:
+---
 
-.NET MAUI project structure
+## 🎯 Goals
 
-XAML layouts
+✔ Practice C# fundamentals through hands-on projects
+✔ Build strong coding habits
+✔ Learn Git & GitHub workflow
+✔ Create a public learning portfolio
+✔ Transition from console → GUI apps
 
-Code-behind logic
+---
 
-Cross-platform app development concepts
+## 📈 Progress Tracker
 
-Goals
+* ✅ Completed **W3Schools C# Course (100%)**
+* ✅ Built first **Console Project**
+* ✅ Added **.NET MAUI GUI Application**
+* 🚀 Currently building more beginner-friendly projects
 
-Practice C# fundamentals through hands-on projects
+---
 
-Build coding muscle memory with real implementations
+## 📚 What I’m Learning
 
-Learn version control with Git and GitHub
+* Control flow (loops, conditionals)
+* User input & validation
+* Random number generation
+* Console vs GUI applications
+* .NET MAUI & XAML basics
+* Version control with Git & GitHub
 
-Create a portfolio of small, working projects
+---
 
-Transition from console applications to GUI-based apps
+## 🧩 Folder Structure (Simplified)
 
-Transform theoretical knowledge into practical skills
+```text
+basic/
+├── NumberGuessingGame/        # Console version
+└── NumberGuessingGameUI/      # .NET MAUI GUI version
+```
 
-Progress
+---
 
-✅ Completed W3Schools C# course (100%)
-✅ Built first working console project
-✅ Added .NET MAUI GUI version of Number Guessing Game
-🚀 Continuing with basic concepts and UI-based applications
+✨ *This repository represents my learning journey — every commit is progress.*
 
-What I'm Learning
 
-Control flow (loops, conditionals)
-
-User input handling and data conversion
-
-Random number generation
-
-Console vs GUI application development
-
-.NET MAUI fundamentals
-
-Git workflow and version control
-
-This is a learning journey — the code may not be perfect, but every project is a step forward 🚀
