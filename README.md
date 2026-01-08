@@ -81,6 +81,6 @@ basic/
 
 ---
 
-✨ *This repository represents my learning journey — every commit is progress.*
+✨ *This repository represents my learning journey — every commit / each code is progress.*
 
 
