@@ -2,6 +2,24 @@
 
 class NumberGuessingGame
 {
+    static int GetValidNumber()
+    {
+        int number;
+
+        while (true)
+        {
+            string input = Console.ReadLine();
+
+            if (int.TryParse(input, out number))
+            {
+                return number;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input try again");
+            }
+        }
+    }
     public static void Main()
     {
         bool playAgain = true;
@@ -14,22 +32,9 @@ class NumberGuessingGame
 
             Console.WriteLine("Hello there! Welcome to NumberGuessingGame");
             Console.Write("Enter your number: ");
-            
-            
-            int chosenNumber;
-            while (true)
-            {
-                string input = Console.ReadLine();
 
-                if (int.TryParse(input, out chosenNumber))
-                {
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input try again");
-                }
-            }
+
+            int chosenNumber = GetValidNumber();
             counter++;
             while (chosenNumber != number)
             {
@@ -44,33 +49,14 @@ class NumberGuessingGame
 
                 }
                 Console.Write("Enter your number again: ");
-              
-                while (true)
-                {
-                    string input = Console.ReadLine();
-
-                    if (int.TryParse(input, out chosenNumber))
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid input try again");
-                    }
-                }
+                chosenNumber = GetValidNumber();
+               
             }
                 Console.WriteLine($"Congratulations! you guessed it in {counter} tries.");
             
             Console.Write("Do you want to play again:");
-            string response = Console.ReadLine();
-            if (response == "yes")
-            {
-                
-            }
-            else
-            {
-                break;
-            }
+            string response = Console.ReadLine().ToLower();
+            playAgain = response == "yes";
 
         }
 
