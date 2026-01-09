@@ -1,0 +1,15 @@
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/obj/Debug/net7.0/To_DO_LIst.csproj.AssemblyReference.cache
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/obj/Debug/net7.0/To_DO_LIst.GeneratedMSBuildEditorConfig.editorconfig
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/obj/Debug/net7.0/To_DO_LIst.AssemblyInfoInputs.cache
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/obj/Debug/net7.0/To_DO_LIst.AssemblyInfo.cs
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/obj/Debug/net7.0/To_DO_LIst.csproj.CoreCompileInputs.cache
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/bin/Debug/net7.0/To_DO_LIst
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/bin/Debug/net7.0/To_DO_LIst.deps.json
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/bin/Debug/net7.0/To_DO_LIst.runtimeconfig.json
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/bin/Debug/net7.0/To_DO_LIst.dll
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/bin/Debug/net7.0/To_DO_LIst.pdb
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/obj/Debug/net7.0/To_DO_LIst.dll
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/obj/Debug/net7.0/refint/To_DO_LIst.dll
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/obj/Debug/net7.0/To_DO_LIst.pdb
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/obj/Debug/net7.0/To_DO_LIst.genruntimeconfig.cache
+/Users/madan/Desktop/Git-hub-C#/basic/To_DO_LIst/To_DO_LIst/obj/Debug/net7.0/ref/To_DO_LIst.dll

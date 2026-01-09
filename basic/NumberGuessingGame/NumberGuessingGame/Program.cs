@@ -1,6 +1,6 @@
-﻿using System;
+﻿using System; 
 
-class NumberGuessingGame
+class NumberGuessingGame 
 {
     static int GetValidNumber()
     {
