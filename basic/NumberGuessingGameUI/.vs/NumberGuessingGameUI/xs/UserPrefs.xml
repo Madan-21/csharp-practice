@@ -1,18 +1,21 @@
 ﻿<Properties StartupConfiguration="{4EB47648-0ED6-4000-A4ED-3D43C9097E2C}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.NumberGuessingGameUI PreferredExecutionTarget="Android.pixel_5_-_api_33" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="NumberGuessingGameUI/MainPage.xaml">
     <Files>
-      <File FileName="NumberGuessingGameUI/MainPage.xaml.cs" Line="27" Column="42" />
+      <File FileName="NumberGuessingGameUI/MainPage.xaml.cs" />
       <File FileName="NumberGuessingGameUI/MainPage.xaml" Line="33" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="NumberGuessingGameUI" expanded="True">
+          <Node name="NumberGuessingGameUI">
             <Node name="NumberGuessingGameUI" expanded="True">
-              <Node name="MainPage.xaml" expanded="True" selected="True" />
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -21,8 +24,5 @@
   </MonoDevelop.Ide.Workbench>
   <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.95" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

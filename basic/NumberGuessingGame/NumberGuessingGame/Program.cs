@@ -32,6 +32,7 @@ class NumberGuessingGame
 
             Console.WriteLine("Hello there! Welcome to NumberGuessingGame");
             Console.Write("Enter your number: ");
+            Console.Beep();
 
 
             int chosenNumber = GetValidNumber();
@@ -54,12 +55,13 @@ class NumberGuessingGame
             }
                 Console.WriteLine($"Congratulations! you guessed it in {counter} tries.");
             
+            
             Console.Write("Do you want to play again:");
             string response = Console.ReadLine().ToLower();
             playAgain = response == "yes";
 
         }
 
-
+        
     }
 }

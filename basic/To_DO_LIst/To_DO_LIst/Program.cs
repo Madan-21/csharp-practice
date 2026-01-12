@@ -12,8 +12,7 @@ class ToDoList
 
         bool addAnotherTask = true;
         while (addAnotherTask)
-        {
-            
+        { 
             Console.WriteLine("Please type the day for which you would like to add task.");
             Console.Write("Day : ");
             string givenDay = Console.ReadLine();
