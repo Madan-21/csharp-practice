@@ -6,10 +6,28 @@ This repo documents my journey of learning C# — starting from **console applic
 ### 🔹 Basics
 #### 🎲 Number Guessing Game — Console
 A simple console game where the player guesses a randomly generated number between **1–100**.
+
 **What it practices:**
 * 🔁 Loops & conditionals
 * ⌨️ User input & type conversion
 * 🎲 `Random` number generation
+* 🧩 **Method refactoring and code organization**
+
+**Refactored Architecture:**
+The game has been refactored into clean, reusable methods following best practices:
+* `GetValidNumber()` - Input validation and error handling
+* `greetUser()` - Welcome message display
+* `randomNumber()` - Random number generation
+* `Counter()` - Core game logic and attempt tracking
+* `PlayAgain()` - Replay prompt with boolean return
+* `Main()` - Clean program flow controller
+
+This refactoring demonstrates:
+* Single Responsibility Principle (each method does one thing)
+* Method parameters and return values
+* Separation of concerns
+* Improved code readability and maintainability
+
 ---
 #### 🖥️ Number Guessing Game — GUI (.NET MAUI)
 A **graphical version** of the Number Guessing Game built using **.NET MAUI** and **XAML**.
@@ -61,10 +79,12 @@ A **conversational console chatbot** that interacts with users based on their mo
 ✔ Learn Git & GitHub workflow  
 ✔ Create a public learning portfolio  
 ✔ Transition from console → GUI apps  
+✔ Master code refactoring and clean code principles  
 ---
 ## 📈 Progress Tracker
 * ✅ Completed **W3Schools C# Course (100%)**
 * ✅ Built first **Console Project** (Number Guessing Game)
+* ✅ **Refactored Number Guessing Game** into clean methods
 * ✅ Added **.NET MAUI GUI Application**
 * ✅ Created **To-Do List Console App** with loops and validation
 * ✅ Built **Chatbot Console App** with mood classification and conversation flow
@@ -80,11 +100,14 @@ A **conversational console chatbot** that interacts with users based on their mo
 * String manipulation and type conversion
 * Method recursion and program flow control
 * Boolean logic and type conversion
+* **Code refactoring and clean architecture**
+* **Method design: parameters, return values, and single responsibility**
+* **Separating concerns for maintainable code**
 ---
 ## 🧩 Folder Structure
 ```text
 basic/
-├── NumberGuessingGame/        # Console version
+├── NumberGuessingGame/        # Console version (refactored)
 ├── NumberGuessingGameUI/      # .NET MAUI GUI version
 ├── To_DO_LIst/                # Console To-Do List app
 └── User/                      # Chatbot Console app
@@ -93,7 +116,7 @@ basic/
 ## 🛠️ Technologies & Tools
 * **Language:** C# (.NET 6+)
 * **Framework:** .NET MAUI (for GUI apps)
-* **IDE:** Visual Studio Code / Visual Studio
+* **IDE:** Visual Studio / Visual Studio Code
 * **Version Control:** Git & GitHub
 ---
 ## 🚀 How to Run
@@ -113,5 +136,16 @@ dotnet run
 * [W3Schools C# Tutorial](https://www.w3schools.com/cs/) - Completed ✅
 * Microsoft .NET Documentation
 * .NET MAUI Official Docs
+* Clean Code Principles & Refactoring Practices
+---
+## 🧠 Key Learnings
+### Code Refactoring
+Through refactoring the Number Guessing Game, I learned:
+* **Breaking down complex code** into smaller, focused methods
+* **Single Responsibility Principle** - each method does one thing well
+* **Method signatures** - using parameters to pass data in, return values to send data out
+* **Code organization** - keeping related logic together while maintaining separation of concerns
+* **Readability** - writing self-documenting code through clear method names
+
 ---
 ✨ *This repository represents my learning journey — every commit, every project is progress.*
