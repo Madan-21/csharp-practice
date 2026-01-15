@@ -1,171 +1,223 @@
 # 🎯 C# Practice Repository
+
 Welcome to my **C# practice repository** 🚀
-This repo documents my journey of learning C# — starting from **console applications** and moving toward **modern GUI-based apps** using **.NET MAUI**.
+This repository documents my journey of learning **C#**, starting with **console-based applications** and gradually moving toward **modern GUI apps** using **.NET MAUI**.
+
+Each project focuses on **core programming fundamentals**, **clean code**, and **progressive refactoring**.
+
 ---
+
 ## 📁 Projects
+
 ### 🔹 Basics
-#### 🎲 Number Guessing Game — Console
+
+---
+
+### 🎲 Number Guessing Game — Console
+
 A simple console game where the player guesses a randomly generated number between **1–100**.
 
 **What it practices:**
+
 * 🔁 Loops & conditionals
 * ⌨️ User input & type conversion
 * 🎲 `Random` number generation
 * 🧩 **Method refactoring and code organization**
 
 **Refactored Architecture:**
-The game has been refactored into clean, reusable methods following best practices:
-* `GetValidNumber()` - Input validation and error handling
-* `greetUser()` - Welcome message display
-* `randomNumber()` - Random number generation
-* `Counter()` - Core game logic and attempt tracking
-* `PlayAgain()` - Replay prompt with boolean return
-* `Main()` - Clean program flow controller
 
-This refactoring demonstrates:
-* Single Responsibility Principle (each method does one thing)
-* Method parameters and return values
-* Separation of concerns
-* Improved code readability and maintainability
+* `GetValidNumber()` – Input validation and error handling
+* `GreetUser()` – Welcome message display
+* `RandomNumber()` – Random number generation
+* `Counter()` – Core game logic and attempt tracking
+* `PlayAgain()` – Replay prompt with boolean return
+* `Main()` – Clean program flow controller
+
+**Key Learnings:**
+
+* Single Responsibility Principle
+* Passing data using return values
+* Clean and readable program flow
 
 ---
-#### 🖥️ Number Guessing Game — GUI (.NET MAUI)
+
+### 🖥️ Number Guessing Game — GUI (.NET MAUI)
+
 A **graphical version** of the Number Guessing Game built using **.NET MAUI** and **XAML**.
+
 **Key highlights:**
+
 * 🎨 Clean and responsive UI
 * 🧠 Event-driven logic
 * 🔘 Button-based interaction
 * 💬 Instant feedback for each guess
+
 **Concepts practiced:**
+
 * .NET MAUI project structure
 * XAML layouts
 * Code-behind logic
 * Cross-platform app development
+
 ---
-#### 📝 To-Do List — Console
-A **command-line task management app** that lets users add tasks for different days of the week.
-**Key features:**
-* 📅 Day-based task organization
-* ➕ Add multiple tasks in one session
-* ✅ Input validation with switch statements
-* 🔄 Loop-based workflow (continue until user exits)
-**What it practices:**
-* `while` loops for continuous user interaction
-* `switch` statements for day validation
-* String manipulation and case handling
-* Boolean logic for flow control
-* User-friendly console interface design
----
-#### 🤖 User (Chatbot Console)
-A **conversational console chatbot** that interacts with users based on their mood and offers assistance.
+
+### 📝 To-Do List — Console (Refactored)
+
+A **command-line task management app** that allows users to add tasks for specific days of the week.
 
 **Key features:**
-* 👋 Personalized greeting with user's name
-* 😊😔 Mood classification (Good/Bad) with appropriate responses
+
+* 📅 Day-based task organization
+* ➕ Add multiple tasks in a single session
+* 🔄 Continuous workflow using loops
+* ❌ Rejects invalid day input gracefully
+
+**Refactored Validation Logic:**
+
+* Days are stored in a **string array**
+* User input is validated using a loop
+* Case-insensitive comparison with normalization
+* Only valid days are accepted before continuing
+
+**What it practices:**
+
+* `while` loops for repeated user interaction
+* Array-based input validation
+* String comparison using `StringComparison.OrdinalIgnoreCase`
+* Boolean flags for control flow
+* Method-based program structure
+
+**Refactoring Highlights:**
+
+* Clear separation of concerns
+* Reusable `Days()` method for validation
+* Improved readability and maintainability
+* Beginner-friendly, scalable logic
+
+---
+
+### 🤖 User (Chatbot Console — Refactored)
+
+A **conversational console chatbot** that interacts with users based on their mood and provides responses accordingly.
+
+**Key features:**
+
+* 👋 Personalized greeting
+* 😊😔 Mood classification (Good / Bad)
 * 💬 Interactive conversation flow
-* ✅ Confirmation and retry logic
-* 🔄 Loop-based restart capability
+* 🔄 Restart capability
 
 **Refactored Architecture:**
-The chatbot has been refactored into clean, organized methods following best practices:
-* `GreetUser()` - Handles initial greeting and captures user's name
-* `AskMood()` - Processes mood input with switch-case validation
-* `MoodType()` - Captures what the user needs help with
-* `Response()` - Handles user confirmation with boolean conversion
-* `TryAgain()` - Manages restart logic
-* `Main()` - Controls the program flow with a clean while loop
 
-This refactoring demonstrates:
-* Single Responsibility Principle (each method has one clear purpose)
-* Proper use of return values to pass data between methods
-* Boolean logic for flow control
-* Separation of UI interaction from program logic
-* Clean, maintainable code structure
+* `GreetUser()` – Handles greeting and name input
+* `AskMood()` – Mood input with switch-case validation
+* `MoodType()` – Captures user intent
+* `Response()` – Confirmation handling using boolean logic
+* `TryAgain()` – Restart control
+* `Main()` – Clean loop-based program flow
 
 **What it practices:**
-* `switch` statements for response classification
-* String manipulation and interpolation
-* Boolean conversion from user input (`ToLower()` comparison)
-* Method chaining - passing data through return values
-* Multi-step user interaction flow
-* Input validation and error handling
-* `while` loops for program continuation
+
+* `switch` statements
+* Boolean logic from user input
+* Method chaining via return values
+* Input validation and retry logic
+* Clean console UI interaction
+
 ---
+
 ## 🎯 Goals
-✔ Practice C# fundamentals through hands-on projects  
-✔ Build strong coding habits  
-✔ Learn Git & GitHub workflow  
-✔ Create a public learning portfolio  
-✔ Transition from console → GUI apps  
-✔ Master code refactoring and clean code principles  
+
+✔ Practice C# fundamentals through hands-on projects
+✔ Build strong coding habits
+✔ Learn Git & GitHub workflow
+✔ Create a public learning portfolio
+✔ Transition from console → GUI apps
+✔ Master **refactoring and clean code principles**
+
 ---
+
 ## 📈 Progress Tracker
+
 * ✅ Completed **W3Schools C# Course (100%)**
-* ✅ Built first **Console Project** (Number Guessing Game)
-* ✅ **Refactored Number Guessing Game** into clean methods
-* ✅ Added **.NET MAUI GUI Application**
-* ✅ Created **To-Do List Console App** with loops and validation
-* ✅ Built **Chatbot Console App** with mood classification and conversation flow
-* ✅ **Refactored Chatbot Console App** into clean, modular methods
-* 🚀 Currently building more beginner-friendly projects
+* ✅ Built **Number Guessing Game (Console)**
+* ✅ Refactored Number Guessing Game into clean methods
+* ✅ Built **.NET MAUI GUI version**
+* ✅ Built **To-Do List Console App**
+* ✅ **Refactored To-Do List** with array-based validation
+* ✅ Built **Chatbot Console App**
+* ✅ Refactored Chatbot into modular methods
+* 🚀 Continuously adding beginner-friendly projects
+
 ---
-## 📚 What I'm Learning
-* Control flow (loops, conditionals, switch statements)
+
+## 📚 What I’m Learning
+
+* Control flow (loops, conditionals, switch)
 * User input & validation
-* Random number generation
+* Arrays and string comparison
 * Console vs GUI applications
-* .NET MAUI & XAML basics
-* Version control with Git & GitHub
-* String manipulation and type conversion
-* Method chaining and data flow between methods
-* Boolean logic and type conversion
-* **Code refactoring and clean architecture**
-* **Method design: parameters, return values, and single responsibility**
-* **Separating concerns for maintainable code**
+* .NET MAUI & XAML
+* Git & GitHub workflow
+* Boolean logic and return values
+* Method chaining and data flow
+* **Clean code and refactoring principles**
+* **Designing methods with single responsibility**
+
 ---
+
 ## 🧩 Folder Structure
+
 ```text
 basic/
 ├── NumberGuessingGame/        # Console version (refactored)
 ├── NumberGuessingGameUI/      # .NET MAUI GUI version
-├── To_DO_LIst/                # Console To-Do List app
-└── User/                      # Chatbot Console app (refactored)
+├── To_DO_List/               # Console To-Do List app (refactored)
+└── User/                     # Chatbot Console app (refactored)
 ```
+
 ---
+
 ## 🛠️ Technologies & Tools
+
 * **Language:** C# (.NET 6+)
-* **Framework:** .NET MAUI (for GUI apps)
-* **IDE:** Visual Studio 
+* **Framework:** .NET MAUI
+* **IDE:** Visual Studio
 * **Version Control:** Git & GitHub
+
 ---
+
 ## 🚀 How to Run
-**Console Applications:**
+
+### Console Applications
+
 ```bash
 cd basic/[ProjectName]
 dotnet run
 ```
-**.NET MAUI Applications:**
+
+### .NET MAUI Application
+
 ```bash
 cd basic/NumberGuessingGameUI
 dotnet build
 dotnet run
 ```
----
-## 📖 Learning Resources
-* [W3Schools C# Tutorial](https://www.w3schools.com/cs/) - Completed ✅
-* Microsoft .NET Documentation
-* .NET MAUI Official Docs
-* Clean Code Principles & Refactoring Practices
----
-## 🧠 Key Learnings
-### Code Refactoring
-Through refactoring the Number Guessing Game and Chatbot Console App, I learned:
-* **Breaking down complex code** into smaller, focused methods
-* **Single Responsibility Principle** - each method does one thing well
-* **Method signatures** - using parameters to pass data in, return values to send data out
-* **Code organization** - keeping related logic together while maintaining separation of concerns
-* **Readability** - writing self-documenting code through clear method names
-* **Data flow** - understanding how to chain methods together by passing return values
 
 ---
-✨ *This repository represents my learning journey — every commit, every project is progress.*
+
+## 🧠 Key Learnings
+
+Through refactoring multiple projects, I learned:
+
+* Breaking complex logic into smaller methods
+* Writing readable and maintainable code
+* Validating user input properly
+* Passing data using method return values
+* Designing clean program flow
+* Thinking logically instead of hard-coding
+
+---
+
+✨ *This repository reflects my continuous learning journey — every refactor is an improvement, and every project builds confidence.*
+
