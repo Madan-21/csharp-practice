@@ -25,7 +25,6 @@ class NumberGuessingGame
     {
         Console.WriteLine("Hello there! Welcome to NumberGuessingGame");
         Console.Write("Enter your number: ");
-        Console.Beep();
     }
     public static int randomNumber()
     {
