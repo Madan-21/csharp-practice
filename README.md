@@ -58,20 +58,38 @@ A **command-line task management app** that lets users add tasks for different d
 ---
 #### 🤖 User (Chatbot Console)
 A **conversational console chatbot** that interacts with users based on their mood and offers assistance.
+
 **Key features:**
 * 👋 Personalized greeting with user's name
 * 😊😔 Mood classification (Good/Bad) with appropriate responses
 * 💬 Interactive conversation flow
 * ✅ Confirmation and retry logic
-* 🔄 Recursive restart capability
+* 🔄 Loop-based restart capability
+
+**Refactored Architecture:**
+The chatbot has been refactored into clean, organized methods following best practices:
+* `GreetUser()` - Handles initial greeting and captures user's name
+* `AskMood()` - Processes mood input with switch-case validation
+* `MoodType()` - Captures what the user needs help with
+* `Response()` - Handles user confirmation with boolean conversion
+* `TryAgain()` - Manages restart logic
+* `Main()` - Controls the program flow with a clean while loop
+
+This refactoring demonstrates:
+* Single Responsibility Principle (each method has one clear purpose)
+* Proper use of return values to pass data between methods
+* Boolean logic for flow control
+* Separation of UI interaction from program logic
+* Clean, maintainable code structure
+
 **What it practices:**
 * `switch` statements for response classification
-* String manipulation and concatenation
-* Boolean conversion from user input
-* Method recursion (`Main()` restart)
+* String manipulation and interpolation
+* Boolean conversion from user input (`ToLower()` comparison)
+* Method chaining - passing data through return values
 * Multi-step user interaction flow
 * Input validation and error handling
-* Type conversion (`string` to `bool`)
+* `while` loops for program continuation
 ---
 ## 🎯 Goals
 ✔ Practice C# fundamentals through hands-on projects  
@@ -88,6 +106,7 @@ A **conversational console chatbot** that interacts with users based on their mo
 * ✅ Added **.NET MAUI GUI Application**
 * ✅ Created **To-Do List Console App** with loops and validation
 * ✅ Built **Chatbot Console App** with mood classification and conversation flow
+* ✅ **Refactored Chatbot Console App** into clean, modular methods
 * 🚀 Currently building more beginner-friendly projects
 ---
 ## 📚 What I'm Learning
@@ -98,7 +117,7 @@ A **conversational console chatbot** that interacts with users based on their mo
 * .NET MAUI & XAML basics
 * Version control with Git & GitHub
 * String manipulation and type conversion
-* Method recursion and program flow control
+* Method chaining and data flow between methods
 * Boolean logic and type conversion
 * **Code refactoring and clean architecture**
 * **Method design: parameters, return values, and single responsibility**
@@ -110,13 +129,13 @@ basic/
 ├── NumberGuessingGame/        # Console version (refactored)
 ├── NumberGuessingGameUI/      # .NET MAUI GUI version
 ├── To_DO_LIst/                # Console To-Do List app
-└── User/                      # Chatbot Console app
+└── User/                      # Chatbot Console app (refactored)
 ```
 ---
 ## 🛠️ Technologies & Tools
 * **Language:** C# (.NET 6+)
 * **Framework:** .NET MAUI (for GUI apps)
-* **IDE:** Visual Studio / Visual Studio Code
+* **IDE:** Visual Studio 
 * **Version Control:** Git & GitHub
 ---
 ## 🚀 How to Run
@@ -140,12 +159,13 @@ dotnet run
 ---
 ## 🧠 Key Learnings
 ### Code Refactoring
-Through refactoring the Number Guessing Game, I learned:
+Through refactoring the Number Guessing Game and Chatbot Console App, I learned:
 * **Breaking down complex code** into smaller, focused methods
 * **Single Responsibility Principle** - each method does one thing well
 * **Method signatures** - using parameters to pass data in, return values to send data out
 * **Code organization** - keeping related logic together while maintaining separation of concerns
 * **Readability** - writing self-documenting code through clear method names
+* **Data flow** - understanding how to chain methods together by passing return values
 
 ---
 ✨ *This repository represents my learning journey — every commit, every project is progress.*
