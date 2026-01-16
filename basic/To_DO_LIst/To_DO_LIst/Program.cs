@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.IO;
 
 class ToDoList
 {
@@ -48,7 +49,12 @@ class ToDoList
 
         Console.Write("Task: ");
         string task = Console.ReadLine();
-        Console.WriteLine($"Your task for " + givenDay + " is " + task);
+
+        string filePath = "task.txt";
+        using (StreamWriter writer = new StreamWriter(filePath, true))
+        {
+            writer.WriteLine($"Your task for " + givenDay + " is " + task);
+        }
         Console.WriteLine("Your task has been saved.");
         return task;
 
@@ -59,10 +65,29 @@ class ToDoList
     {
         Console.Write("Do you want to add another task: ");
         string response = Console.ReadLine().ToLower();
-        bool addAnotherTask = response == "yes";
-        Console.WriteLine($"Please write your task for " + givenDay + " down below.");
+        bool addAnotherTask = response == "yes" || response == "y";
 
         return addAnotherTask;
+    }
+    public static void ReadTask()
+    {
+        Console.Write("Do you want to view your tasks: ");
+        string response = Console.ReadLine().ToLower();
+
+        if (response == "yes" || response == "y")
+        {
+            if (File.Exists("task.txt"))
+            {
+                Console.WriteLine("Your Tasks: ");
+                var tasks = File.ReadAllText("task.txt");
+                Console.WriteLine(tasks);
+            }
+            else
+            {
+                Console.WriteLine("No tasks found yet.");
+            }
+        }
+
     }
 
     public static void Main()
@@ -75,7 +100,10 @@ class ToDoList
             AddTask(givenDay);
             addAnotherTask = AnotherTask(givenDay);
         }
+        ReadTask();
         Console.WriteLine("Thank you for using our app.");
+        Console.WriteLine("Press any key to exit.");
+        Console.ReadKey();
 
     }
 
