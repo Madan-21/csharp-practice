@@ -33,7 +33,7 @@ class ToDoList
                 if (day.Equals(givenDay, StringComparison.OrdinalIgnoreCase))
                 {
                     isValid = true;
-                    givenDay = day; // normalize casing
+                    givenDay = day;
                     break;
                 }
             }
@@ -41,7 +41,7 @@ class ToDoList
             if (isValid)
                 return givenDay;
 
-            Console.WriteLine("❌ Invalid day. Please try again.");
+            Console.WriteLine("Invalid day. Please try again.");
         }
     }
     public static string AddTask(string givenDay)
@@ -51,10 +51,13 @@ class ToDoList
         string task = Console.ReadLine();
 
         string filePath = "task.txt";
-        using (StreamWriter writer = new StreamWriter(filePath, true))
+
+        if (!File.ReadAllText(filePath).Contains(givenDay + ":"))
         {
-            writer.WriteLine($"Your task for " + givenDay + " is " + task);
+            File.AppendAllText(filePath, $"\n{givenDay}:\n");
         }
+
+        File.AppendAllText(filePath, "- " + task + "\n");
         Console.WriteLine("Your task has been saved.");
         return task;
 
