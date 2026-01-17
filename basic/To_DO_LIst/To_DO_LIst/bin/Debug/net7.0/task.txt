@@ -8,3 +8,6 @@ Your task for Sunday is do hw
 Sunday:
 - how mlops
 - compile the codes
+- 
+- 
+- Compile as many code as possible

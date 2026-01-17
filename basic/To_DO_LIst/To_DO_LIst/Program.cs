@@ -4,11 +4,29 @@ using System.IO;
 
 class ToDoList
 {
+    private static string GetNoNullInput(string message)
+    {
+
+        while (true)
+        {
+            Console.Write(message);
+            string input = Console.ReadLine();
+
+            if (!string.IsNullOrWhiteSpace(input))
+            {
+                return input;
+
+            }
+
+            Console.WriteLine("Input cannot be empty. Please try again.");
+
+        }
+    }
+
     public static string GreetUser()
     {
         Console.WriteLine("Welcome user!");
-        Console.Write("PLease enter your name: ");
-        string name = Console.ReadLine();
+        string name = GetNoNullInput("Please enter your name: ");
         Console.WriteLine($"Welcome " + name + " to our To DO List app");
 
         return name;
@@ -23,8 +41,7 @@ class ToDoList
 
         while (true)
         {
-            Console.Write("Enter day: ");
-            string givenDay = Console.ReadLine();
+            string givenDay = GetNoNullInput("Enter day: ");
 
             bool isValid = false;
 
@@ -46,9 +63,7 @@ class ToDoList
     }
     public static string AddTask(string givenDay)
     {
-
-        Console.Write("Task: ");
-        string task = Console.ReadLine();
+        string task = GetNoNullInput("Task: ");
 
         string filePath = "task.txt";
 
@@ -56,7 +71,6 @@ class ToDoList
         {
             File.AppendAllText(filePath, $"\n{givenDay}:\n");
         }
-
         File.AppendAllText(filePath, "- " + task + "\n");
         Console.WriteLine("Your task has been saved.");
         return task;
@@ -66,16 +80,15 @@ class ToDoList
 
     public static bool AnotherTask(string givenDay)
     {
-        Console.Write("Do you want to add another task: ");
-        string response = Console.ReadLine().ToLower();
+        string response = GetNoNullInput("Do you want to add another task: ").ToLower();
         bool addAnotherTask = response == "yes" || response == "y";
 
         return addAnotherTask;
     }
     public static void ReadTask()
     {
-        Console.Write("Do you want to view your tasks: ");
-        string response = Console.ReadLine().ToLower();
+
+        string response = GetNoNullInput("Do you want to view your tasks: ").ToLower();
 
         if (response == "yes" || response == "y")
         {
